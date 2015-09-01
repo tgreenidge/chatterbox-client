@@ -5,8 +5,10 @@
     <title>chatterbox</title>
     <link rel="stylesheet" href="styles/styles.css">
 
+
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
@@ -14,7 +16,23 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <button id = "refresh">
+         Refresh
+      </button> 
+
+      <select id = "roomSelect" >
+        <option value = "allRooms"> All Rooms </option>
+        <option value = "createRoom"> Create New Room </option>
+      </select>
+      <form id = "send" method = "post" action = "#">
+        <input type = "text" class = "submitted"> 
+        <input class = "submit" type = "submit" name = "submit">
+      </form>
+      <div id = "chats">
+      </div>
+
+  
+
     </div>
   </body>
 </html>
